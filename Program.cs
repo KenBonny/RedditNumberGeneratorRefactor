@@ -16,7 +16,8 @@ namespace RedditNumberGeneratorRefactor
                 count++;
 
                 randomValue = numberGen.Next(1, 347500);
-                if (randomValue >= goal)
+                var goalReached = randomValue >= goal;
+                if (goalReached)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                 }

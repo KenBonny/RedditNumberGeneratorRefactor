@@ -23,6 +23,7 @@ namespace RedditNumberGeneratorRefactor
                     Console.ForegroundColor = ConsoleColor.Red;
                 }
                 Console.WriteLine(randomValue);
+                Console.ForegroundColor = ConsoleColor.Black;
             }
             while (!goalReached);
 

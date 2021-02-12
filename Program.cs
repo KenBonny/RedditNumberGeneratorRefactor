@@ -53,10 +53,6 @@ namespace RedditNumberGeneratorRefactor
                 n02 = n01;
                 a++;
             }
-            else if (a != 0)
-            {
-                
-            }
         }
     }
 }

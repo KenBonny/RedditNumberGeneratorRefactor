@@ -4,17 +4,14 @@ namespace RedditNumberGeneratorRefactor
 {
     class Program
     {
-        static int n01;
-        static int n02;
-        static int count;
         static int goal = 300000;
         static void Main()
         {
             var numberGen = new Random();
-            n01 = numberGen.Next(1, 347500);
-            n02 = n01;
+            var n01 = numberGen.Next(1, 347500);
+            var n02 = n01;
 
-            count = 1;
+            var count = 1;
             do
             {
 

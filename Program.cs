@@ -13,7 +13,8 @@ namespace RedditNumberGeneratorRefactor
         {
             var numberGen = new Random();
             number(numberGen);
-         
+
+            count = 1;
             do
             {
 
@@ -31,6 +32,10 @@ namespace RedditNumberGeneratorRefactor
                 n02 = n01;
                 number(numberGen);
                 
+                if (n02 != n01)
+                {
+                    count++;
+                }
               
                 
             }
@@ -44,10 +49,6 @@ namespace RedditNumberGeneratorRefactor
         static void number(Random numberGen)
         {
             n01 = numberGen.Next(1, 347500);
-            if (n02 != n01)
-            {
-                count++;
-            }
             if (a == 0)
             {
                 n02 = n01;

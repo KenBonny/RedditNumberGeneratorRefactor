@@ -12,10 +12,8 @@ namespace RedditNumberGeneratorRefactor
         static int goal = 300000;
         static void Main()
         {
-            if (y == 0)
-            {
-                number();
-            }
+            number();
+         
             do
             {
 

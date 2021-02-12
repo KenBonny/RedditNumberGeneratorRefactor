@@ -11,7 +11,7 @@ namespace RedditNumberGeneratorRefactor
         static void Main()
         {
             var numberGen = new Random();
-            number(numberGen);
+            n01 = numberGen.Next(1, 347500);
             n02 = n01;
 
             count = 1;
@@ -30,7 +30,7 @@ namespace RedditNumberGeneratorRefactor
                     Console.ForegroundColor = ConsoleColor.Red;
                 }
                 n02 = n01;
-                number(numberGen);
+                n01 = numberGen.Next(1, 347500);
                 
                 if (n02 != n01)
                 {
@@ -45,10 +45,6 @@ namespace RedditNumberGeneratorRefactor
             Console.WriteLine("\nit took you " + count + " tries to get number " + n01);
 
 
-        }
-        static void number(Random numberGen)
-        {
-            n01 = numberGen.Next(1, 347500);
         }
     }
 }

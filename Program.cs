@@ -8,26 +8,26 @@ namespace RedditNumberGeneratorRefactor
         static void Main()
         {
             var numberGen = new Random();
-            var n01 = numberGen.Next(1, 347500);
+            var randomValue = numberGen.Next(1, 347500);
 
             var count = 0;
             do
             {
                 count++;
 
-                Console.WriteLine(n01);
-                if (n01 == goal)
+                Console.WriteLine(randomValue);
+                if (randomValue == goal)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                 }
-                n01 = numberGen.Next(1, 347500);
+                randomValue = numberGen.Next(1, 347500);
               
                 
             }
-            while (n01 < goal);
+            while (randomValue < goal);
 
 
-            Console.WriteLine("\nit took you " + count + " tries to get number " + n01);
+            Console.WriteLine("\nit took you " + count + " tries to get number " + randomValue);
 
 
         }

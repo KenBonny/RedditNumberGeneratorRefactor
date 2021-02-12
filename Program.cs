@@ -15,11 +15,11 @@ namespace RedditNumberGeneratorRefactor
             {
                 count++;
 
-                Console.WriteLine(randomValue);
-                if (randomValue == goal)
+                if (randomValue >= goal)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                 }
+                Console.WriteLine(randomValue);
                 randomValue = numberGen.Next(1, 347500);
               
                 

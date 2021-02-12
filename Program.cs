@@ -16,12 +16,6 @@ namespace RedditNumberGeneratorRefactor
             {
 
                 Console.WriteLine(n01);
-                if (n02 != n01)
-                {
-                    Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine(n01 + " ");
-                    Console.ForegroundColor = ConsoleColor.White;
-                }
                 if (n01 == goal)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;

@@ -4,13 +4,13 @@ namespace RedditNumberGeneratorRefactor
 {
     class Program
     {
-        static int n01 = 0;
-        static int n02 = 0;
-        static int x = 0;
-        static int y = 0;
-        static int a = 0;
+        static int n01;
+        static int n02;
+        static int x;
+        static int y;
+        static int a;
         static int goal = 300000;
-        static void Main(string[] args)
+        static void Main()
         {
             if (y == 0)
             {

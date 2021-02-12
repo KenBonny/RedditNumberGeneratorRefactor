@@ -6,7 +6,7 @@ namespace RedditNumberGeneratorRefactor
     {
         static int n01;
         static int n02;
-        static int x;
+        static int count;
         static int a;
         static int goal = 300000;
         static void Main()
@@ -36,7 +36,7 @@ namespace RedditNumberGeneratorRefactor
             while (n01 < goal);
 
 
-            Console.WriteLine("\nit took you " + x + " tries to get number " + n01);
+            Console.WriteLine("\nit took you " + count + " tries to get number " + n01);
             Console.ReadKey();
 
 
@@ -47,7 +47,7 @@ namespace RedditNumberGeneratorRefactor
             n01 = numberGen.Next(1, 347500);
             if (n02 != n01)
             {
-                x++;
+                count++;
             }
             if (a == 0)
             {

@@ -11,9 +11,10 @@ namespace RedditNumberGeneratorRefactor
             var n01 = numberGen.Next(1, 347500);
             var n02 = n01;
 
-            var count = 1;
+            var count = 0;
             do
             {
+                count++;
 
                 Console.WriteLine(n01);
                 if (n01 == goal)
@@ -22,11 +23,6 @@ namespace RedditNumberGeneratorRefactor
                 }
                 n02 = n01;
                 n01 = numberGen.Next(1, 347500);
-                
-                if (n02 != n01)
-                {
-                    count++;
-                }
               
                 
             }

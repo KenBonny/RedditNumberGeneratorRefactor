@@ -37,7 +37,6 @@ namespace RedditNumberGeneratorRefactor
 
 
             Console.WriteLine("\nit took you " + count + " tries to get number " + n01);
-            Console.ReadKey();
 
 
         }

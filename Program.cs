@@ -28,7 +28,7 @@ namespace RedditNumberGeneratorRefactor
             while (!goalReached);
 
 
-            Console.WriteLine("\nit took you " + count + " tries to get number " + randomValue);
+            Console.WriteLine($"\nit took you {count} tries to get number {randomValue}");
 
 
         }

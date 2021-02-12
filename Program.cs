@@ -9,7 +9,6 @@ namespace RedditNumberGeneratorRefactor
         {
             var numberGen = new Random();
             var n01 = numberGen.Next(1, 347500);
-            var n02 = n01;
 
             var count = 0;
             do
@@ -21,7 +20,6 @@ namespace RedditNumberGeneratorRefactor
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                 }
-                n02 = n01;
                 n01 = numberGen.Next(1, 347500);
               
                 

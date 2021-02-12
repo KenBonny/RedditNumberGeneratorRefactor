@@ -11,7 +11,8 @@ namespace RedditNumberGeneratorRefactor
         static int goal = 300000;
         static void Main()
         {
-            number();
+            var numberGen = new Random();
+            number(numberGen);
          
             do
             {
@@ -28,7 +29,7 @@ namespace RedditNumberGeneratorRefactor
                     Console.ForegroundColor = ConsoleColor.Red;
                 }
                 n02 = n01;
-                number();
+                number(numberGen);
                 
               
                 
@@ -40,9 +41,8 @@ namespace RedditNumberGeneratorRefactor
 
 
         }
-        static void number()
+        static void number(Random numberGen)
         {
-            Random numberGen = new Random();
             n01 = numberGen.Next(1, 347500);
             if (n02 != n01)
             {

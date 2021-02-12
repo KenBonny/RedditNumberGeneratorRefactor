@@ -4,7 +4,8 @@ namespace RedditNumberGeneratorRefactor
 {
     class Program
     {
-        static int goal = 300000;
+        private const int goal = 300000;
+
         static void Main()
         {
             var numberGen = new Random();
